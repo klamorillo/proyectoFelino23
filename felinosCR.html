@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="hojaFelinos.css">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body style="color: aliceblue;">
+
+  <header class="Header fixed-top">
+    <div class="header"> </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+      <div class="container-fluid" >
+        <a class="navbar-brand" href="#">Navegación</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acercaSitio.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="masInformacion.html">Contacto y sugerencias</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tipo de felinos  
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#puma">Puma</a></li>
+                <li><a class="dropdown-item" href="#jaguar">Jaguar</a></li>
+                <li><a class="dropdown-item" href="#ocelote">Ocelote</a></li>
+                <li><a class="dropdown-item" href="#margay">Margay</a></li>
+                <li><a class="dropdown-item" href="#yaguarundi">Yaguarundi</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- El resto del contenido de la página aquí -->
+<main class="main-content" style="background-color: green;">
+    <p><h1 id="textoPresentacion" style="background-color: green;" >Los tipos Felinos a Nivel Nacional</h1></p>
+  <p id="textoPresentacion" style="background-color: green;">  Al ser depredadores topes en la cadena alimentaria, ayudan a controlar las poblaciones de presas, manteniendo el equilibrio en el ecosistema y preservando la salud de 
+    otras especies al eliminar individuos debilitados o enfermos. Además, la conservación de los felinos contribuye a la biodiversidad al proteger una variedad de especies de presas. 
+    La presencia y salud de los felinos también sirve como indicador de la salud general del ecosistema. Además, los felinos pueden tener beneficios económicos a través del ecoturismo 
+    y desempeñan un papel importante en la educación y sensibilización sobre la conservación de la vida silvestre debido a su carisma y belleza.
+</p>
+<p id="textoPresentacion" style="background-color: green;" > Los felinos son los aquellos mamíferos carnívoros que se engloban dentro de la familia Felidae y de las que se conocen alrededor de 40 especies. Se trata un grupo animal de los más reconocidos como cazadores dentro del reino animal por ser muy sigilosos, veloces y certeros. La mayoría son carnívoros y suelen sentir predilección por las presas vivas. Algunas de las especies que pertenecen a esta familia son el león, el leopardo, el lince ibérico, el puma, el jaguar y una gran variedad de tipos de gato –el gato pescador, el gato de Borneo, el gato de cabeza plana, el gato dorado africano, etc.</p>  
+<div class="gatoBosque">
+    <img src="imagenes/felinoNeutro.jpg" alt="Gato en el bosque">
+  </div>
+    <div id="condicionesActuales">
+    <p >Estas majestuosas especies, que alguna vez prosperaron en hábitats extensos y diversos, enfrentan hoy amenazas significativas que ponen en riesgo su supervivencia a largo plazo. </p>
+    <h3>Pérdida de Hábitat:</h3>
+    <p>Deforestación: La expansión agrícola, la tala de bosques para la obtención de madera y otros fines, así como la conversión de tierras para el desarrollo urbano, contribuyen significativamente a la pérdida de hábitat. Estas actividades reducen el espacio disponible para los felinos y fragmentan sus hábitats naturales, dificultando la búsqueda de alimentos y la reproducción.</p>
+    <p>Infraestructura: La construcción de carreteras, represas y otros proyectos de infraestructura puede fragmentar los hábitats, aislando poblaciones de felinos y limitando su capacidad para desplazarse y encontrar pareja.</p>
+     <h3>Caza Furtiva</h3>
+     <p>Piel y Partes del Cuerpo: La caza furtiva para obtener pieles y partes del cuerpo de estos felinos, impulsada por el comercio ilegal de fauna, es una amenaza seria. Los felinos son a menudo cazados por sus pieles, huesos y otros productos, que son comercializados en el mercado negro.</p>
+     <p>Conflictos con Ganadería: En algunas áreas, la caza furtiva también puede estar relacionada con conflictos con ganaderos. Cuando los felinos atacan al ganado, los ganaderos pueden responder cazando a los felinos para proteger su ganado</p>
+     <h3>Impactos Adicionales:</h3>
+     <p>Cambios Climáticos: Los cambios climáticos pueden afectar los patrones de distribución y comportamiento de estas especies, alterando sus hábitats y presas naturales.</p>
+     <p>Enfermedades y Fragmentación Genética: La fragmentación del hábitat puede aumentar la susceptibilidad de los felinos a enfermedades, y la fragmentación genética resultante puede tener efectos a largo plazo en la salud de las poblaciones.</p>
+    </div>
+<div id="puma" >
+    <h1 id="textoPresentacion"  >El felino Puma</h1>
+     <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demoPuma" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demoPuma" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demoPuma" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/Pumas/puma1.png" alt="Los Angeles" class="d-block" style="width:100%" style="height: 100%;">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/Pumas/puma2.png" alt="Chicago" class="d-block" style="width:100%"style="height: 100%;">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/Pumas/puma3.png" alt="New York" class="d-block" style="width:100%"style="height: 100%;">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+<p id="textoPresentacion" >El puma centroamericano o puma costarricense (Puma concolor costaricensis) es una de las subespecies en que se divide la especie 
+    de Puma concolor, denominado comúnmente «puma» o «león de montaña». Aquí hay algunas de las características físicas más destacadas del puma:</p>
+
+    <p ><h3 >Tamaño y Estructura Corporal:</h3></p>
+<p><li>Los pumas son grandes felinos con cuerpos musculosos y compactos.</li></p>
+<p><li>Tienen una cabeza grande y redondeada, con orejas pequeñas y redondeadas en comparación con otros grandes felinos.</li></p>
+<p><h3>Pelaje</h3></p>
+<p><li>El pelaje del puma es corto y suave</li></p>
+<p><li>El color del pelaje varía considerablemente y puede ir desde tonos grises y marrones hasta rojos o amarillos. La parte inferior suele ser más clara.</li></p>
+<p><h3>Color de Ojos</h3></p>
+<p><li>Los pumas tienen ojos grandes y redondos. El color de los ojos es generalmente de tonalidades amarillas o doradas</li></p>
+<p><h3>Cola</h3></p>
+<p><li>La cola del puma es larga y esbelta, con una punta negra. Se utiliza para el equilibrio, especialmente durante la caza y el salto</li></p>
+<p><h3>Garras Retráctiles</h3></p>
+<p><li>Al igual que otros felinos, los pumas tienen garras retráctiles que utilizan para cazar y trepar</li></p>
+<p><li> Estas garras se mantienen retraídas cuando no están en uso, ayudando a mantenerlas afiladas.</li></p>
+ <p><h3>Dientes y Estatura</h3></p>
+ <p><li>Los pumas tienen dientes afilados y poderosos adaptados para desgarrar la carne de sus presas. Su dentición refleja su condición de carnívoros.</li></p>
+ <p><li>Los machos son generalmente más grandes que las hembras. Los pumas varían en longitud, pero su longitud total, incluida la cola, puede superar los 2 metros.</li></p>
+ <p><h3>Alimentación</h3></p>
+ <p>Por lo general caza de noche. Pueden trasladarse por largas distancias en busca de alimento. Se alimentan principalmente de mamíferos y en ocasiones llega a atacar al ganado doméstico. Su presa principal es el venado cola blanca, pero también se alimentan del zorro pelón, mono congo, mono colorado, mono carablanca, puerco espín, guatusa, rata de monte, iguana y tortuga lora.</p>
+ <p><h3>Estado de conservación</h3></p>
+ <p>Las poblaciones de pumas pertenecientes a esta subespecie han sufrido una reducción de su geonemia, aunque todavía habitan en regular número en muchos sectores de su antiguo territorio, por lo que la UICN la categoriza como de «Preocupación menor», si bien algunos especialistas creen que sería mejor un cambio a la categoría de «Vulnerable».</p>
+ <p>En Costa Rica, esta especie está considerada como amenazada. Está protegida y regulada por la Ley de Conservación de la Vida Silvestre N.º 7317, la Ley Orgánica del Ambiente N.º 7554 y el decreto N.º 26435-MINAE.</p>
+</div> 
+
+<h1 style="margin-bottom: 10px; text-align: center;"> Se grabo un video donde aparece el Puma </h1>
+<video controls style="display: block; margin: 0 auto; width: 140%; max-width: 300px;">
+    <source src="videos/encuentroPuma.mp4" type="video/mp4">
+     <!-- en caso el video no aparezca se presenta este mensaje-->
+    Tu navegador no admite la reproducción de video.
+</video>
+
+
+
+</div> 
+</div> 
+</div> 
+<div id="jaguar">
+    <p><h1 id="textoPresentacion" >El Jaguar</h1></p>
+      <!-- Carousel -->
+    <div id="demoJaguar" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demoJaguar" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demoJaguar" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demoJaguar" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/jaguares/Jaguar1.png" alt="Los Angeles" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/jaguares/Jaguar2.png" alt="Chicago" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/jaguares/Jaguar3.png" alt="New York" class="d-block w-100">
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demoJaguar" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demoJaguar" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <p>El jaguar, conocido localmente como "tigre" o "yaguar", es una especie de felino que habita en diversos hábitats de Costa Rica, desde bosques tropicales hasta zonas más secas. Es el felino más grande de América y se caracteriza por su robusto cuerpo, su cabeza ancha y sus poderosas mandíbulas. El jaguar es reconocido por su hermoso pelaje amarillo dorado con manchas en forma de rosetas, que le proporciona un camuflaje efectivo en su entorno natural.</p>
+       <p>En Costa Rica, el jaguar juega un papel crucial en el mantenimiento del equilibrio ecológico. Como depredador tope, controla las poblaciones de presas y ayuda a preservar la salud de los ecosistemas al eliminar individuos débiles o enfermos. Sin embargo, la población de jaguares en Costa Rica ha enfrentado amenazas, como la pérdida de hábitat y la caza furtiva.</p>
+      <p><h3>Tamaño y Estructura Corporal</h3></p>
+      <p><li>Los jaguares son robustos y musculosos, con cuerpos compactos y patas cortas pero fuertes.</li></p>
+      <p><li>Son el tercer felino más grande del mundo, después del tigre y el león, con los machos siendo generalmente más grandes que las hembras</li></p>
+      <p><h3>Pelaje y Patrones de Manchas</h3></p>
+      <p><li>Tienen un pelaje corto y denso que varía en color, desde amarillo dorado hasta marrón oscuro.</li></p>
+      <p><li>Los jaguares presentan un distintivo patrón de manchas en forma de rosetas en su pelaje, que es único para cada individuo.</li></p>
+      <p><h3>Cabeza Grande y Mandíbulas Poderosas</h3></p>
+      <p><li>Tienen cabezas anchas y robustas con mandíbulas extremadamente poderosas.</li></p>
+      <p><li>Los jaguares tienen la capacidad de ejercer una fuerza de mordida excepcionalmente fuerte, lo que les permite perforar los cráneos de sus presas.</li></p>
+      <p><h3>Hábitos Acuáticos</h3></p>
+      <p><li>A diferencia de otros grandes felinos, a los jaguares les gusta el agua y son hábiles nadadores.</li></p>
+      <p><li>Pueden cazar presas acuáticas, como peces y caimanes, y a menudo se les encuentra cerca de cuerpos de agua.</li></p>
+     <p><h3>Territorio Amplio</h3></p>
+     <p><li>Los jaguares son animales solitarios y territoriales que requieren grandes áreas para cazar y reproducirse.</li></p>
+     <p><li>La extensión de su territorio puede variar según la disponibilidad de presas y el hábitat.</li></p>
+    <p><h3>Hábitos Nocturnos y Crepusculares</h3></p>
+    <p><li>Son principalmente activos durante la noche y al amanecer y al atardecer, aunque también pueden cazar durante el día.</li></p>
+    <p><li>Su habilidad para cazar en la penumbra les proporciona una ventaja táctica sobre sus presas.</li></p>    
+  </div> 
+  <h1 style="margin-bottom: 20px; text-align: center;"> El Jaguar nadando </h1>
+<video controls style="display: block; margin: 0 auto; width: 140%; max-width: 400px;">
+    <source src="videos/videoJaguar.mp4" type="video/mp4">
+     <!-- en caso el video no aparezca se presenta este mensaje-->
+    Tu navegador no admite la reproducción de video.
+</video>
+</div> 
+</div> 
+</div> 
+<div id="ocelote">
+    <p><h1 id="textoPresentacion" >El Ocelote</h1></p>
+      <!-- Carousel -->
+    <div id="demoOcelote" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demoOcelote" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demoOcelote" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demoOcelote" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/ocelotes/ocelote1.png" alt="Los Angeles" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/ocelotes/ocelote2.png" alt="Chicago" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/ocelotes/ocelote3.png" alt="New York" class="d-block w-100">
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demoOcelote" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demoOcelote" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+  <p>El ocelote, también conocido como manigordo, es un felino de tamaño medio que habita en diversas regiones de América, desde el Norte de los Estados Unidos hasta el Sur de Argentina.</p>
+  <p>El ocelote es un felino fascinante que contribuye significativamente a la biodiversidad y al equilibrio ecológico en Costa Rica. Su preservación es esencial para mantener la salud de los ecosistemas y garantizar la coexistencia armoniosa con otras especies en la región.</p>
+  <p>En el contexto de Costa Rica, el ocelote es una especie emblemática y juega un papel importante en el equilibrio ecológico. Aquí tienes una definición del ocelote en Costa Rica:</p>    
+  <p><h3>Descripción Física</h3></p>
+  <p><li>El ocelote tiene un aspecto elegante y esbelto, con un pelaje corto y suave.</li></p>
+  <p><li>Su pelaje muestra un patrón característico de manchas oceladas en su cuerpo, cabeza y cola, lo que le da su nombre.</li></p>
+  <p><li>El color del pelaje varía, pero comúnmente es amarillo dorado con manchas negras.</li></p>
+  <p><h3>Tamaño y Estructura</h3></p>
+  <p><li>Es un felino de tamaño mediano, más grande que un gato doméstico pero más pequeño que un puma o jaguar.</li></p>
+  <p><li>Tiene patas relativamente cortas y orejas puntiagudas.</li></p> 
+  <p><h3>Hábitos y Comportamiento</h3></p>
+  <p><li>Es un animal principalmente nocturno y crepuscular, lo que significa que es más activo durante la noche y al amanecer y atardecer.</li></p>
+  <p><li>Su dieta es variada e incluye pequeños mamíferos, aves, reptiles e insectos</li></p>
+  <p><h3>Hábitat</h3></p>
+  <p><li>El ocelote puede encontrarse en una variedad de hábitats, desde bosques tropicales hasta áreas más abiertas como sabanas y manglares.</li></p>
+  <p><li>Aunque son adaptables, prefieren áreas con vegetación densa para proporcionar cobertura mientras cazan.</li></p>
+  <p><h3>Distribución en Costa Rica</h3></p>
+  <p><li>El ocelote está presente en varias regiones de Costa Rica, incluyendo bosques lluviosos, bosques secos y áreas de transición.</li></p>
+  <p><li>Su presencia en diferentes ecosistemas subraya su capacidad para adaptarse a diversas condiciones</li></p>
+ <p><h3>Importancia Ecológica</h3></p>
+ <p><li>Como carnívoro, el ocelote desempeña un papel crucial en el control de poblaciones de presas y ayuda a mantener el equilibrio en los ecosistemas.</li></p>
+ <p><li>Su presencia también puede ser indicativa de la salud general de los hábitats en los que habita.</li></p>
+ <p><h3>Conservación</h3></p>
+ <p><li>El ocelote enfrenta amenazas similares a otros felinos, como la pérdida de hábitat, la fragmentación del paisaje y la caza furtiva.</li></p>
+<p><li>La conservación del ocelote en Costa Rica implica la protección de sus hábitats naturales y la implementación de medidas para mitigar las amenazas.</li></p>
+</div> 
+<video controls style="display: block; margin: 0 auto; width: 240%; max-width: 400px;">
+  <source src="videos/videoOcelote.mp4" type="video/mp4">
+   <!-- en caso el video no aparezca se presenta este mensaje-->
+  Tu navegador no admite la reproducción de video.
+</video>
+
+</div> 
+</div> 
+</div> 
+<div id="margay">
+  <p><h1 id="textoPresentacion" >El Margay</h1></p>
+    <!-- Carousel -->
+  <div id="demoMargay" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demoMargay" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demoMargay" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demoMargay" data-bs-slide-to="2"></button>
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/margay/margay1.jpg" alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/margay/margay2.jpg" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/margay/margay3.jpg" alt="New York" class="d-block w-100">
+        </div>
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demoMargay" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demoMargay" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <p>Es un felino habitante desde el norte de México hasta Uruguay. De las 6 especies de felinos que viven en Costa Rica, es el segundo de menor tamaño, con no más de 1 metro desde la nariz hasta la punta de la cola. Es de hábitos exclusivamente nocturnos y arborícolas, y durante el día se refugia en cuevas o troncos huecos, por lo que está considerado como uno de los mamíferos más difíciles de observar, lo cual explica el poco conocimiento de esta especie.</p>
+       <p>El margay destaca por su estilo de vida arbóreo y sus adaptaciones únicas para la caza en las copas de los árboles, lo que lo convierte en una especie fascinante y valiosa para la biodiversidad en Costa Rica. Su conservación es esencial para mantener la salud de los ecosistemas y garantizar su papel en la cadena alimentaria.</p>      
+      <p>Es un felino pequeño y ágil que posee características únicas que lo distinguen en el reino animal. A continuación, según sus caracteristicas fisicas y cotidiano:</p>
+      <p><h3>Descripción Física</h3></p>
+      <p><li>El margay es un felino de tamaño pequeño a mediano, con un cuerpo esbelto y patas largas y delgadas.</li></p>
+      <p><li>Su pelaje es suave y suele tener un color amarillo grisáceo o amarillo parduzco con manchas y manchas oscuras que forman un patrón distintivo.</li></p>
+      <p><h3>Tamaño y Estructura</h3></p>
+      <p><li>Comparado con otros felinos, el margay es más pequeño y liviano.</li></p>
+      <p><li>Sus patas traseras son especialmente largas, lo que le otorga una capacidad notable para trepar árboles con agilidad.</li></p>
+     <p><h3>Hábitos y Comportamiento</h3></p>
+     <p><li>Al igual que el ocelote, el margay es principalmente nocturno y crepuscular, siendo más activo durante la noche y al amanecer y atardecer.</li></p>
+     <p><li>Tiene habilidades excepcionales para trepar y saltar entre las ramas de los árboles, donde pasa una parte significativa de su tiempo.</li></p>
+    <p><h3>Hábitat</h3></p>
+    <p><li>El margay prefiere hábitats boscosos, incluyendo bosques tropicales y subtropicales.</li></p>
+    <p><li>Es conocido por su habilidad para vivir en entornos arbolados y ha desarrollado adaptaciones únicas para la vida arbórea.</li></p>
+    <p><h3>Dieta</h3></p>
+    <p><li>La dieta del margay se compone principalmente de pequeños mamíferos, aves, insectos y otros animales pequeños que puede capturar en los árboles.</li></p>
+    <p><li>Su agilidad en los árboles le permite cazar presas inaccesibles para otros depredadores.</li></p>  
+    <p><h3>Distribución en Costa Rica</h3></p>
+    <p><li>El margay se encuentra en varias regiones de Costa Rica, especialmente en áreas boscosas y selváticas.</li></p>
+    <p><li>Su presencia puede ser indicativa de la salud de los ecosistemas arbóreos en los que habita.</li></p>
+    <p><h3>Importancia Ecológica</h3></p>
+    <p><li>La presencia del margay contribuye al equilibrio ecológico al controlar las poblaciones de presas y participar en dinámicas tróficas en su hábitat.</li></p>
+    <p><h3>Conservación</h3></p>
+    <p><li>Al igual que otros felinos, el margay enfrenta amenazas relacionadas con la pérdida de hábitat y la fragmentación de los bosques.</li></p>
+    <p><li>La conservación del margay implica la protección de sus entornos naturales y la promoción de prácticas sostenibles.</li></p>
+  </div> 
+  <video controls style="display: block; margin: 0 auto; width: 240%; max-width: 400px;">
+    <source src="videos/margay.mp4" type="video/mp4">
+     <!-- en caso el video no aparezca se presenta este mensaje-->
+    Tu navegador no admite la reproducción de video.
+  </video>
+</div> 
+</div> 
+</div> 
+<div id="yaguarundi">
+  <p><h1 id="textoPresentacion">El Yaguarundi</h1></p>
+  <!-- Carousel -->
+  <div id="yaguarundi" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#yaguarundi" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#yaguarundi" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#yaguarundi" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="imagenes/yaguarundi/Yaguarundí1.jpg" alt="Los Angeles" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="imagenes/yaguarundi/Yaguarundí2.jpg" alt="Chicago" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="imagenes/yaguarundi/Yaguarundí3.jpg" alt="New York" class="d-block w-100">
+          </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#yaguarundi" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#yaguarundi" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+      <p>Aunque el yaguarundí no enfrenta las mismas amenazas que algunos felinos más grandes, la pérdida de hábitat y la fragmentación del paisaje pueden afectar su supervivencia.</p>
+      <p>La conservación implica la protección de sus hábitats y la promoción de prácticas que permitan la coexistencia con esta especie.</p>
+      <p>El yaguarundí es un felino nativo de América que se encuentra en diversos hábitats, desde manglares hasta bosques tropicales y subtropicales. En Costa Rica, se le conoce como "yaguarundí". Aquí tienes una definición de esta especie en el contexto costarricense:</p>
+      <p><h3>Descripción Física</h3></p>
+      <p><li>El yaguarundí tiene un cuerpo alargado y esbelto, con patas relativamente cortas en comparación con otros felinos.</li></p>
+      <p><li>Su pelaje es corto y suave, y su color puede variar desde gris oscuro hasta rojizo o amarillento, a menudo con un tono más claro en la parte inferior.</li></p>
+      <p><h3>Tamaño y Estructura</h3></p>
+      <p><li>Es un felino de tamaño mediano, más pequeño que el puma y el jaguar.</li></p>
+      <p><li>Tiene una cabeza pequeña con orejas redondeadas y una cola larga.</li></p>
+      <p><h3>Hábitos y Comportamiento</h3></p>
+      <p><li>A diferencia de algunos felinos, el yaguarundí puede ser diurno y crepuscular, lo que significa que es activo durante el día y al amanecer y atardecer.</li></p>
+      <p><li>Es un excelente trepador y nadador, lo que le permite explorar diversos entornos.</li></p>
+      <p><h3>Hábitat</h3></p>
+      <p><li>El yaguarundí se adapta a una variedad de hábitats, desde bosques hasta áreas más abiertas como matorrales y manglares.</li></p>
+      <p><li>Puede habitar desde tierras bajas hasta zonas montañosas.</li></p>
+      <p><h3>Dieta</h3></p>
+      <p><li>La dieta del yaguarundí es diversa e incluye pequeños mamíferos, aves, reptiles, peces e insectos.</li></p>
+      <p><li>Es un cazador ágil que puede perseguir presas tanto en tierra como en el agua.</li></p>
+      <p><h3>Distribución en Costa Rica</h3></p>
+      <p><li>El yaguarundí está presente en varias regiones de Costa Rica, desde las costas hasta las tierras altas.</li></p>
+      <p><li>Su capacidad para adaptarse a diferentes hábitats le permite habitar una variedad de entornos.</li></p>
+      <p><h3>Importancia Ecológica:</h3></p>
+      <p><li>Como depredador, el yaguarundí contribuye al control de poblaciones de presas y participa en la dinámica ecológica de los ecosistemas en los que vive.</li></p>
+    <video controls style="display: block; margin: 0 auto; width: 240%; max-width: 400px;">
+      <source src="videos/yaguarundi.mp4" type="video/mp4">
+       <!-- en caso el video no aparezca se presenta este mensaje-->
+      Tu navegador no admite la reproducción de video.
+    </video>
+</div>
+</div>
+
+</main>
+<footer>
+  <div class="copyright">&copy; 2023 Karla Morales Castrillo. Todos los derechos reservados.</div>
+</footer>
+</body>
+    <!-- JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

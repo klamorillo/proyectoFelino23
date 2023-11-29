@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+body {
+    background-image: url('imagenes/paisaje.jpg'); /* Ruta de tu imagen de fondo */
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover; /* Esto ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Esto centra la imagen en el fondo */
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr  3fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  text-align: justify;
+  padding: 10px;
+  grid-template-areas:
+    "header header"
+    "navbar  navbar"
+    "main  main"
+    "footer footer"; /* Agrega el área del footer */
+}
+
+
+.header {
+  grid-area: header;
+  opacity: 0.8; /* Imagen con transparencia del 50% */
+  background: #696;
+  color: rgba(255, 255, 255, 0.5); /* Color de texto blanco con transparencia del 50% */
+  opacity: 10px; /* Imagen con transparencia del 50% */
+  position: relative;
+
+  width: 95%; /* Establece un ancho del 100% para ocupar todo el ancho disponible */
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-color: white;
+  border-style: solid;
+  border-width: 10px;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+    overflow: hidden;
+    display: flex; /* Esto agrega el soporte de flexbox */
+    flex-direction: column; /* Esto hace que los elementos se alineen verticalmente */
+}
+
+/* Estilo de los elementos del menú */
+li {
+    margin-right: 100px; /* Ajusta el valor según tu preferencia */
+}
+
+/* Estilo de los enlaces del menú */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambia el color del enlace al pasar el ratón sobre él */
+li a:hover {
+    background-color: #555;
+}
+
+/* Estilo del menú desplegable */
+.dropdown {
+    display: inline-block;
+}
+
+/* Estilo del contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 1000px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0px;
+    padding: 20px;
+}
+
+/* Estilo de los elementos del menú desplegable */
+.dropdown-content a {
+    color: black;
+    margin: 30px;
+    padding: 30px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* Cambia el color del enlace en el menú desplegable al pasar el ratón sobre él */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el menú desplegable cuando el ratón pasa sobre él */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+  main {
+    grid-area: main;
+    margin-left: 120px; /* Ajusta el valor según sea necesario */
+}
+
+/* Estilo para el navbar cuando se pasa el mouse */
+nav:hover {
+  background-color: rgba(208, 255, 0, 0.5); /* Verde transparente */
+}
+
+.main-content {
+    display: flex;
+    align-items: justify;
+    max-width: 100%;
+    border: 10px solid white; /* Ajusta los bordes según tus preferencias */
+    font-size: 16px;
+    margin-left: 60px; /* Espacio separador entre la imagen y el texto */
+    max-width: 79%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    flex: 1;
+    padding: 20px; /* Agrega relleno para separar el texto de los bordes */
+    margin-bottom: 10PX;
+  
+  }
+  
+  /* Estilo para el main cuando se pasa el mouse */
+  .main-content:hover {
+    background-color: rgba(0, 255, 255, 0.5); /* Verde transparente */
+  }
+
+  /* Estilo específico para el footer si es necesario */
+footer {
+    display: flex;
+    grid-area: footer;
+    width: 100%; /* Puedes ajustar el valor según tus preferencias */
+    padding: 20px; /* Añade un relleno para dar más espacio dentro del footer */
+    background-color: aqua; 
+    color: white; /* Cambia el color del texto según tus preferencias */
+  
+    /*Mostrar dentro de un cuadrado*/  
+    border-color: purple;
+    border-style: solid;
+    margin-top: 20px;
+  
+    opacity: 0.9; /* Imagen con transparencia del 50% */
+  }
+  
+  .footer-content :hover {
+    background-color: rgba(174, 211, 11, 0.5); /* Verde transparente */
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    footer {
+      width: 100%; /* Hace que el footer ocupe el ancho completo de la pantalla */
+      margin-top: 0; /* Elimina el margen superior en dispositivos móviles */
+    }
+  }
+  
+  

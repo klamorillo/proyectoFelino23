@@ -1,0 +1,93 @@
+body {
+  background-image: url("imagenes/bosque.jpg");
+  margin: 20px;
+  padding: 20px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 10px solid white; /* Ajusta los bordes según tus preferencias */
+}
+
+p, h3, li {
+  text-align: justify;
+  margin-left: 60px; /* Márgen izquierdo */
+  margin-right: 60px; /* Márgen derecho */
+  margin-bottom: 10px; /* Espacio en la parte inferior */
+}
+
+h1 {
+  text-align: center;
+}
+
+#centroRescate {
+  background-color: green;
+  border: 10px solid white; /* Ajusta los bordes según tus preferencias */
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+#monteVerde{
+  background-color: green;
+  border: 10px solid white; /* Ajusta los bordes según tus preferencias */
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+#danta{
+  background-color: green;
+  border: 10px solid white; /* Ajusta los bordes según tus preferencias */
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+#ongConservacion{
+  background-color: green;
+  border: 10px solid white; /* Ajusta los bordes según tus preferencias */
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#logoHuellaFelina {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-block-start: auto;
+  margin: 90px; /* Esto centra horizontalmente */
+  top: 10%; /* Esto centra verticalmente */
+  transform: translateY(50%); /* Ajusta para centrar verticalmente */
+}
+
+.acg {
+  max-width: 50%; /* Ajusta el tamaño máximo según tus necesidades */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo específico para el footer si es necesario */
+footer {
+  display: flex;
+  grid-area: footer;
+  width: 100%; /* Puedes ajustar el valor según tus preferencias */
+  padding: 20px; /* Añade un relleno para dar más espacio dentro del footer */
+  background-color: aqua; 
+  color: white; /* Cambia el color del texto según tus preferencias */
+
+  /*Mostrar dentro de un cuadrado*/  
+  border-color: purple;
+  border-style: solid;
+  border-width: 5px;
+  margin-right: 10px;
+
+  opacity: 0.9; /* Imagen con transparencia del 50% */
+}
+
+.footer-content :hover {
+  background-color: rgba(174, 211, 11, 0.5); /* Verde transparente */
+}

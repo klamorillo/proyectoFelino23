@@ -1,0 +1,155 @@
+/* Fija el encabezado en la parte superior */
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #992626; /* Puedes ajustar el color de fondo según tus preferencias */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  /* Ajusta el espacio después de fijar el encabezado */
+  body {
+    padding-top: 50px; /* Ajusta el valor según la altura de tu encabezado */
+    background-image: url("imagenes/paisaje.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .header {
+    background-image: url("imagenes/bosque.jpg");
+    font-size: 30px;
+    padding: 20px;
+    background-color: #726a6a; /* Puedes ajustar el color de fondo según tu diseño */
+}
+
+.gatoBosque{
+    margin-left: 450px;
+    width: 410px;
+    height: 260px;
+    margin-bottom: 160px;
+}
+
+.main-content {
+    margin-top: 180px; /* Ajusta el margen superior para evitar que el contenido se solape con el encabezado fijo */
+}
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+#menu {
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    margin-right: 10px;
+}
+
+#menu a {
+    color: aqua;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+}
+
+#menu a:hover {
+    background-color: red;
+}
+
+#textoPresentacion {
+    text-align: justify;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #87ceeb;
+    background-color: #b0c9ca;
+}
+
+.col-md-8{
+ border-bottom: 20px;
+ color: aliceblue;
+    margin: 10px auto;
+    border: 10px solid #87ceeb;
+}
+
+.main {
+    margin: 10px;
+    padding: 100px;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+
+/* Estilo para la tabla de comentarios */
+#comentariosTable {
+    width: 80%;
+    border-collapse: collapse; /* Para que los bordes de las celdas se fusionen */
+    margin-top: 60px; /* Ajusta según sea necesario */
+}
+
+/* Estilo para las celdas de la tabla */
+#comentariosTable td {
+    border: 5px solid #ddd; /* Bordes de 1 píxel de ancho y color gris claro */
+    padding: 8px; /* Espaciado interno dentro de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para la imagen en las celdas */
+.comentariosTable img {
+    width: 60px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 60px;
+    border-radius: 60%; /* Para que la imagen tenga bordes redondeados (opcional) */
+}
+
+/* Estilo para el nombre en las celdas */
+.comentariosTable .nombreComentario {
+    font-weight: bold; /* Texto en negrita para el nombre */
+}
+
+/* Estilo específico para el footer si es necesario */
+footer {
+    display: flex;
+    grid-area: footer;
+    width: 100%; /* Puedes ajustar el valor según tus preferencias */
+    padding: 20px; /* Añade un relleno para dar más espacio dentro del footer */
+    background-color: aqua; 
+    color: white; /* Cambia el color del texto según tus preferencias */
+  
+    /*Mostrar dentro de un cuadrado*/  
+    border-color: purple;
+    border-style: solid;
+    border-width: 5px;
+    margin-right: 10px;
+  
+    opacity: 0.9; /* Imagen con transparencia del 50% */
+  }
+  
+  .footer-content :hover {
+    background-color: rgba(174, 211, 11, 0.5); /* Verde transparente */
+  }

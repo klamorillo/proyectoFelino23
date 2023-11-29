@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagenes</title>
+    <link rel="stylesheet" href="hojaGaleria.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="header" style="color: rgb(255, 255, 255)">
+        <div class="header-content">
+            <h1 class="tituloheader">Galería de Imagenes</h1>
+        </div>
+    </header>
+   
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="masInformacion.html" target="_self1">Contactos</a></li>
+            <li><a href="acercaSitio.html">Página de Acerca del sitio</a></li>
+        </ul>
+    </nav>
+
+    <div class="verImagenes">
+        <div class="imagen" data-src="imagenes/jaguares/Jaguar1.png"> Jaguar
+            <img src="imagenes/jaguares/Jaguar1.png" alt="Imagen 1">
+        </div>
+        <div class="imagen" data-src="imagenes/jaguares/Jaguar2.png"> Jaguar
+            <img src="imagenes/jaguares/Jaguar2.png" alt="Imagen 2">
+        </div>
+        <div class="imagen" data-src="imagenes/jaguares/Jaguar3.png"> Jaguar
+            <img src="imagenes/jaguares/Jaguar3.png" alt="Imagen 3">
+        </div>
+        <div class="imagen" data-src="imagenes/jaguares/Jaguar4.png"> Jaguar
+            <img src="imagenes/jaguares/Jaguar4.png" alt="Imagen 4">
+        </div>
+        <div class="imagen" data-src="imagenes/margay/margay1.jpg"> Margay
+            <img src="imagenes/margay/margay1.jpg" alt="Imagen 5">
+        </div>
+        <div class="imagen" data-src="imagenes/margay/margay2.jpg"> Margay
+            <img src="imagenes/margay/margay2.jpg" alt="Imagen 6">
+        </div>
+        <div class="imagen" data-src="imagenes/margay/margay3.jpg"> Margay
+            <img src="imagenes/margay/margay3.jpg" alt="Imagen 6">
+        </div>
+        <div class="imagen" data-src="imagenes/margay/margay4.jpg"> Margay
+            <img src="imagenes/margay/margay4.jpg" alt="Imagen 7">
+        </div>
+        <div class="imagen" data-src="imagenes/ocelotes/ocelote1.png"> Ocelote
+            <img src="imagenes/ocelotes/ocelote1.png" alt="Imagen 8">
+        </div>
+        <div class="imagen" data-src="imagenes/ocelotes/ocelote2.png"> Ocelote
+            <img src="imagenes/ocelotes/ocelote2.png" alt="Imagen 9">
+        </div>
+        <div class="imagen" data-src="imagenes/ocelotes/ocelote3.png"> Ocelote
+            <img src="imagenes/ocelotes/ocelote3.png" alt="Imagen 10">
+        </div>
+        <div class="imagen" data-src="imagenes/ocelotes/paisaje-en-costa-ricia-donde-hay-ocelotes-felino-upscaled.png"> Ocelote
+            <img src="imagenes/ocelotes/paisaje-en-costa-ricia-donde-hay-ocelotes-felino-upscaled.png" alt="Imagen 11">
+        </div>
+        <div class="imagen" data-src="imagenes/Pumas/puma1.png"> Puma
+            <img src="imagenes/Pumas/puma1.png" alt="Imagen 12">
+        </div>
+        <div class="imagen" data-src="imagenes/Pumas/puma2.png"> Puma
+            <img src="imagenes/Pumas/puma2.png" alt="Imagen 13">
+        </div>
+        <div class="imagen" data-src="imagenes/Pumas/puma3.png"> Puma
+            <img src="imagenes/Pumas/puma3.png" alt="Imagen 14">
+        </div>
+        <div class="imagen" data-src="imagenes/Pumas/puma4.png"> Puma
+            <img src="imagenes/Pumas/puma4.png" alt="Imagen 15">
+        </div>
+        <div class="imagen" data-src="imagenes/Pumas/felino.jpg"> Puma
+            <img src="imagenes/Pumas/felino.jpg" alt="Imagen 16">
+        </div>
+        <div class="imagen" data-src="imagenes/yaguarundi/Yaguarundí1.jpg"> Yaguarundí
+            <img src="imagenes/yaguarundi/Yaguarundí1.jpg" alt="Imagen 17">
+        </div>
+        <div class="imagen" data-src="imagenes/yaguarundi/Yaguarundí2.jpg"> Yaguarundí
+            <img src="imagenes/yaguarundi/Yaguarundí2.jpg" alt="Imagen 18">
+        </div>
+        <div class="imagen" data-src="imagenes/yaguarundi/Yaguarundí3.jpg"> Yaguarundí
+            <img src="imagenes/yaguarundi/Yaguarundí3.jpg" alt="Imagen 19">
+        </div>
+        <div class="imagen" data-src="imagenes/yaguarundi/Yaguarundí4.jpg"> Yaguarundí
+            <img src="imagenes/yaguarundi/Yaguarundí4.jpg" alt="Imagen 20">
+        </div>
+        <div class="imagen" data-src="imagenes/AreasConservacion/ACG01.jpg"> Monte Verde
+            <img src="imagenes/AreasConservacion/ACG01.jpg" alt="Imagen 20">
+        </div>
+        <div class="imagen" data-src="imagenes/AreasConservacion/corredor01.jpg"> Corredores
+            <img src="imagenes/AreasConservacion/corredor01.jpg" alt="Imagen 20">
+        </div>
+         
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+        <img class="lightbox-contenido" id="lightbox-contenido">
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">&copy; 2023 Karla Morales Castrillo. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

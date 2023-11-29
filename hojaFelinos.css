@@ -1,0 +1,110 @@
+/* Fija el encabezado en la parte superior */
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #992626; /* Puedes ajustar el color de fondo según tus preferencias */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  /* Ajusta el espacio después de fijar el encabezado */
+  body {
+    padding-top: 50px; /* Ajusta el valor según la altura de tu encabezado */
+    background-image: url("imagenes/paisaje.jpg");
+
+  }
+  
+  .header {
+    background-image: url("imagenes/bosque.jpg");
+    font-size: 30px;
+    padding: 20px;
+    background-color: #726a6a; /* Puedes ajustar el color de fondo según tu diseño */
+}
+
+.gatoBosque{
+    margin-left: 450px;
+    width: 410px;
+    height: 260px;
+    margin-bottom: 160px;
+}
+
+.main-content {
+    margin-top: 180px; /* Ajusta el margen superior para evitar que el contenido se solape con el encabezado fijo */
+}
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu {
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    margin-right: 10px;
+}
+
+#menu a {
+    color: aqua;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+}
+
+#menu a:hover {
+    background-color: red;
+}
+
+#textoPresentacion {
+    text-align: justify;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #87ceeb;
+    background-color: #b0c9ca;
+}
+
+.main {
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+
+#puma, #jaguar, #ocelote, #margay, #yaguarundi {
+    margin: 10px auto;
+    border: 10px solid #87ceeb;
+    background: rgb(14, 73, 14);
+}
+
+p, h3, li {
+    text-align: justify;
+    margin-left: 60px; /* Márgen izquierdo */
+    margin-right: 60px; /* Márgen derecho */
+    margin-bottom: 10px; /* Espacio en la parte inferior */
+  }

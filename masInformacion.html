@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más información</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="hojaMasInformacion.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<body>
+
+    <header class="header">
+        <h1 style="color: white">Más información</h1>
+        <p style="color: white">La fauna silvestre a nivel Nacional, donde toma importancia sobre la raza felina, se ha considerado parte de los recursos importantes del ciclo de la vida.</p>
+    </header>
+    
+<nav>
+    <!-- Menú principal -->
+    <ul>
+        <li><a href="index.html" target="_self">Home</a></li>
+        <li> <a href="masInformacion.html" target="_self">Contactos</a></li>
+        <li class="dropdown">
+            <a href="paginaGaleria.html" target="_self" >Galeria</a></li>
+        <li><a href="acercaSitio.html"target="_self">Acerca de</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form id="frmContacto" onsubmit="return validarFormulario()" 
+    action="https://formspree.io/f/maygzbgp" 
+    method="POST">
+        <h1 style="color: white">¿Tiene dudas sobre la página?</h1>
+        <div class="contenedor">
+            <legend style="color: white">Nombre completo </legend>
+            <input type="text" type="text" id="txtNombreCompleto" name="NombreCompleto" value="" />
+        
+            <div>
+                <legend style="color: white">Sugerencias</legend>
+                <textarea name="message" id="txtArea" ></textarea>
+                
+            </div>
+        
+            <legend style="color: white" > Correo electronico</legend>
+            <input type="email" id="txtCorreoElectronico" name="Correo electronico" value="" />
+             
+            <p id="pEnviar"></p>
+            <button  type="submit">Enviar </button>
+        </form>
+        </div>
+    </form>
+    
+    <div id="contactoSinac">
+    <h1 style="color: white"><strong><h1>¿Quiere contactarse al SINAC?</h1></strong> </h1>
+    <h3><p style="color: white" >Correo Electrónico: info@sinac.go.cr </p></h3>
+    <h3><p style="color: white">Teléfono: 2522-6500</p></h3>
+    <h3><p style="color: white">Fax: 2248-2451</p></h3>
+
+    <h1 style="color: white" > Contactos de Áreas de Conservación</h1>
+
+<table>
+    <tr>
+        <th>Área</th>
+        <th>Oficina</th>
+        <th>Teléfono</th>
+        <th>Fax</th>
+        <th>Correo Electrónico</th>
+        <th>Dirección</th>
+    </tr>
+    <!-- Datos de la tabla -->
+    <tr>
+        <td style="color: white">Área de Conservación Arenal Huétar Norte (ACAHN)</td>
+        <td style="color: white">Oficina Regional, Ciudad Quesada</td>
+        <td style="color: white">2460-0055 / 2460-1412</td>
+        <td style="color: white">2460-0644</td>
+        <td style="color: white">acahn.info@sinac.go.cr</td>
+        <td style="color: white">150 norte y 200 este del Hospital de San Carlos, Ciudad Quesada, San Carlos, Alajuela.</td>
+    </tr>
+    <tr>
+        <td style="color: white" >Área de Conservación Arenal Tempisque (ACAT)</td>
+        <td style="color: white" >Oficina Regional, Tilarán</td>
+        <td style="color: white" >2695-5180</td>
+        <td style="color: white" >2695-6570</td>
+        <td style="color: white" >[Correo Electrónico no proporcionado]</td>
+        <td style="color: white">Guanacaste, Tilaran, de las instalaciones de la fuerza pública 275 metros al Sur, contiguo a la Estación de Bomberos, edificio blanco esquinero.</td>
+    </tr>
+    <tr>
+        <td style="color: white" >Área de Conservación Guanacaste (ACG)</td>
+        <td style="color: white"  >Oficina Sub-regional, Liberia</td>
+        <td style="color: white"  >2666-0630 (Trámites Forestales, Vida Silvestre, Patrimonio Natural en Zona Marítimo Terrestre)</td>
+        <td style="color: white" >[Fax no proporcionado]</td>
+        <td style="color: white" >acg.info@sinac.go.cr (Información Turística y consultas generales sobre Áreas Protegidas)</td>
+        <td style="color: white" >Del segundo cruce de San Miguel de Santo Domingo de Heredia 450 metros al noreste, sobre la carretera Braulio Carrillo</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación La Amistad Caribe (ACLAC)</td>
+        <td style="color: white">Oficina Regional, Limón Barrio Los Corales</td>
+        <td style="color: white">2758-6612 / 2758-6509</td>
+        <td style="color: white">2758-6631 / 2758-6632</td>
+        <td style="color: white">aclac.info@sinac.go.cr</td>
+        <td style="color: white">Limón, Cantón Central, distrito Primero, 50 metros sur del Registro Civil.</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación La Amistad Pacífico (ACLAP)</td>
+        <td style="color: white">Oficina Regional, Peréz Zeledón</td>
+        <td style="color: white">2771-3155</td>
+        <td style="color: white">2771-3297</td>
+        <td style="color: white">aclap.info@sinac.go.cr</td>
+        <td style="color: white">Pérez Zeledón, Daniel Flores, Barrio Villa Ligia. 100 metros Este y 100 metros Sur de la UNED.</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación Central (ACC)</td>
+        <td style="color: white">Oficina Regional, San Miguel de Santo Domingo, Heredia</td>
+        <td style="color: white">2268-8091/ 2268-8087</td>
+        <td style="color: white">2268-8096</td>
+        <td style="color: white">acc.info@sinac.go.cr</td>
+        <td style="color: white">Del segundo cruce de San Miguel de Santo Domingo de Heredia 450 metros al noreste, sobre la carretera Braulio Carrillo</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación Marina Cocos (ACMC)</td>
+        <td style="color: white">Oficina Regional, San José</td>
+        <td style="color: white">2291-1215/ 2291-1216</td>
+        <td style="color: white">2291-1264</td>
+        <td style="color: white">acmc.info​@sinac.go.cr</td>
+        <td style="color: white">[Dirección no proporcionada]</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación Osa (ACOSA)</td>
+        <td style="color: white">Oficina Regional, Golfito</td>
+        <td style="color: white">2775-1210</td>
+        <td style="color: white">2775-9010</td>
+        <td style="color: white">acosa.info@sinac.go.cr</td>
+        <td style="color: white">800 mts Norte de Pista de aterrizaje de Golfito, Antiguo Naranjal</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación Tempisque (ACT)</td>
+        <td style="color: white">Oficina Regional, Nicoya</td>
+        <td style="color: white">2686-4967</td>
+        <td style="color: white">2686-4969</td>
+        <td style="color: white">act.info@sinac.go.cr</td>
+        <td style="color: white">Costado Sur del Templo Católico Nuevo, Nicoya, Guanacaste</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación Tortuguero (ACTO)</td>
+        <td style="color: white">Oficina Regional, Guápiles</td>
+        <td style="color: white">2710-2929</td>
+        <td style="color: white">2710-7673</td>
+        <td style="color: white">acto.info@sinac.go.cr</td>
+        <td style="color: white">Carretera vieja a Jiménez de Pococí, junto al puente sobre el Río Santa Clara</td>
+    </tr>
+    <tr>
+        <td style="color: white">Área de Conservación Pacífico Central (ACOPAC)</td>
+        <td style="color: white">Oficina Regional, Puriscal</td>
+        <td style="color: white">2416-7068</td>
+        <td style="color: white">2416-5017</td>
+        <td style="color: white">acopac.info@sinac.go.cr</td>
+        <td style="color: white">1.800 metros al Sureste de los EBAIS en Santiago de Puriscal, Barrio Santa Cecilia, carretera a San Rafael</td>
+    </tr>
+</table>
+</div>
+    
+</main>
+
+<footer>
+    <div class="copyright">&copy; 2023 Karla Morales Castrillo. Todos los derechos reservados.</div>
+</footer>
+<script src="recursos/js/correoElectronico.js"></script>
+</body>
+</html>

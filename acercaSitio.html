@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca del sitio</title>
+    <link rel="stylesheet" href="acercaSitio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="Header fixed-top">
+        <div class="header"> </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+          <div class="container-fluid" >
+            <a class="navbar-brand" href="#">Navegación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="acercaSitio.html">A cerca de</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="masInformacion.html">Contacto y sugerencias</a>
+                </li>                 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+  <main style="background-color: green;">
+    <section id="creador" class="container mt-5" >
+        <div class="row">
+            <div class="col-md-3" >
+                <img src="imagenes/miPerfil.jpg"  alt="Foto del Creador 1" class="img-fluid rounded-circle float-right mb-3">
+                <img src="cabezaGato.png" alt="Foto del Creador 2" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h2 style="margin-top: 80px;">Creador</h2>
+                <p>Hola, soy Karla Morales Castrillo, el creador de este sitio web. ¡Gracias por visitar!</p>
+                <p>Curso: Diseño de Aplicaciones Web, Tercer Cuatrimestre del año 2023</p>
+                <p>Correo Electrónico: kamoralesc@est.utn.ac.cr</p>
+                <h1>¿Porque elegi este tema?</h1>
+                <p class="text-justify">Costa Rica alberga una increíble diversidad biológica, y los felinos silvestres son parte integral de este ecosistema. La observación y estudio de estos animales pueden ofrecer una comprensión más profunda de la complejidad y la interconexión de la vida silvestre en la región.</p>
+                <p class="text-justify">Los felinos silvestres a menudo enfrentan amenazas significativas, como la pérdida de hábitat, la caza furtiva y el cambio climático. La elección de este tema podría estar motivada por un interés en la conservación de estas especies y en comprender cómo se pueden proteger sus hábitats naturales.</p>
+                <p class="text-justify">La convivencia entre humanos y felinos silvestres puede plantear desafíos, pero también ofrece oportunidades para estudiar cómo estas especies se adaptan a la presencia humana. La gestión de reservas y parques naturales puede ser un aspecto </p>
+                <p class="text-justify">Las reservas naturales que albergan felinos silvestres pueden convertirse en destinos turísticos sostenibles, proporcionando ingresos para la conservación y educación ambiental. Estudiar este aspecto podría implicar explorar cómo se pueden gestionar estas reservas de manera sostenible para beneficio de la vida silvestre y las comunidades locales.</p>
+            </div>
+        </div>
+    </section>
+<main class="claseComentarios">
+    <div>
+        <h1 style="margin-left: 130px;">Area de comentarios</h1>
+        <img src="imagenes/perfilAnonimo.jpg" alt="Foto de perfil" id="fotoPerfil" style="width: 100px; height: 100px; margin-left: 130px;">
+           
+        <h3 style="margin-left: 130px;">Nombre</h3>
+        <input type="text" id="txtNombre" style="margin-left: 130px; width: 40%;" required>
+        
+        <h3 style="margin-left: 130px;">Comentario</h3>
+       <textarea id="txtComentario" required style="margin-left: 130px; width: 80%; height: 200px;"></textarea>
+
+        
+       <button type="button" style="margin-left: 130px;" onclick="guardarComentario()">Guardar Comentario</button>
+<div id="comentariosContainer" style="color: white;">
+    <table id="comentariosTable" style="margin: 130px;">
+        <tr>
+            <th>Foto</th>
+            <th>Nombre</th>
+            <th>Comentario</th>
+        </tr>
+    </table>
+</div>
+</main>
+<footer class="footer" >
+    <div class="footer-content" >
+    <div class="copyright">&copy; 2023 Karla Morales Castrillo. Todos los derechos reservados.</div>
+</div>
+</footer>
+<script>
+
+function guardarComentario() {
+    var nombre = document.getElementById('txtNombre').value;
+    var comentario = document.getElementById('txtComentario').value;
+
+    if (nombre && comentario) {
+        var nuevoComentario = {
+            nombre: nombre,
+            comentario: comentario
+        };
+
+        var comentariosGuardados = JSON.parse(localStorage.getItem('comentarios')) || [];
+
+        // Verificar si el comentario ya existe para evitar duplicados
+        var comentarioExistente = comentariosGuardados.find(function (com) {
+            return com.nombre === nuevoComentario.nombre && com.comentario === nuevoComentario.comentario;
+        });
+
+        if (!comentarioExistente) {
+            comentariosGuardados.push(nuevoComentario);
+            localStorage.setItem('comentarios', JSON.stringify(comentariosGuardados));
+            mostrarComentarios(); // Mostrar los comentarios después de guardar
+        } else {
+            alert('Este comentario ya ha sido guardado.');
+        }
+
+        document.getElementById('txtNombre').value = '';
+        document.getElementById('txtComentario').value = '';
+    } else {
+        alert('Por favor, ingresa un nombre y un comentario antes de guardar.');
+    }
+}
+
+function mostrarComentarios() {
+    var comentariosGuardados = JSON.parse(localStorage.getItem('comentarios')) || [];
+    var comentariosTable = document.getElementById('comentariosTable');
+
+    // Limpiar la tabla antes de mostrar los comentarios
+    comentariosTable.innerHTML = '<tr><th>Foto</th><th>Nombre</th><th>Comentario</th></tr>';
+
+    comentariosGuardados.forEach(function (comentario) {
+        var fila = comentariosTable.insertRow();
+
+        var celdaImagen = fila.insertCell();
+        var fotoPerfil = document.createElement('img');
+        fotoPerfil.src = 'imagenes/perfilAnonimo.jpg';
+        fotoPerfil.alt = 'perfilAnonimo';
+        fotoPerfil.style.width = '50px';
+        fotoPerfil.style.height = '50px';
+        celdaImagen.appendChild(fotoPerfil);
+
+        var celdaNombre = fila.insertCell();
+        celdaNombre.innerHTML = comentario.nombre;
+
+        var celdaComentario = fila.insertCell();
+        celdaComentario.innerHTML = comentario.comentario;
+    });
+}
+
+mostrarComentarios(); // Mostrar los comentarios existentes al cargar la página
+
+var comentariosGuardados = JSON.parse(localStorage.getItem('comentarios')) || [];
+
+</script>
+
+</body>
+</html>
